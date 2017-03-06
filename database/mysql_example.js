@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
 
 connection.connect()
 
-connection.query('SELECT * FROM Tasks', function (err, rows, fields) {
+connection.query('SELECT * FROM Projects', function (err, rows, fields) {
   if (err) throw err
 
   console.log('result', rows)
